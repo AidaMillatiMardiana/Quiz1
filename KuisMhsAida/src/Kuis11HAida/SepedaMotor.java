@@ -22,21 +22,23 @@ public class SepedaMotor {
     }
     
     void nyalakanMotor(boolean kontak){
-        
-        
+        this.kontakMotor = kontak;
     }
     
     void matikanMotor(boolean kontak){
-       
+        this.kontakMotor = kontak;
     }
     
     void tambahKecepatanMotor(int kec){
-        
-        
+        if (kecepatanMotor >= 100) {
+            System.out.println("Kecepatan maksimum mesin adalah 100 Km/jam");
+        } 
     }
     
     void kurangiKecepatanMotor(int kec){
-        
+        if (kecepatanMotor <= 0) {
+            System.out.println(" kecepatan mininumnya adalah 0 Km/jam.");
+        }
     }
     
     void info(){
